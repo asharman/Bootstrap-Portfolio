@@ -1,32 +1,18 @@
 /*---------------Global Styling-------------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------*/
 
-* {
-    box-sizing: border-box;
-    line-height: 20pt;
-}
-
-/* Sets up the page layout */
-
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 /* The main background image */
 
 body {
     background-image: url("../images/funky-lines.png");
 }
 
-/* Creates a container over the header and the page's contents so that the footer can attach to the bottom
-the negative margin gives .push and .footer enough space to fit appropriately no matter how large the content is */
+.navbar {
+    padding: 0;
+}
 
-.wrapper {
-    min-height: 100%;
-    margin-bottom: -78px;
+.container {
+    padding: 0;
 }
 
 /* Helps push the margin to the bottom of the content no matter how long the content is */
@@ -35,115 +21,37 @@ the negative margin gives .push and .footer enough space to fit appropriately no
     height: 78px;
 }
 
-/* The box that holds the main content on each page */
-
-.container {
-    width: 960px;
-    margin: 30px auto;
-    background-color: white;
-    border-style: solid;
-    border-width: 1px;
-    border-color: #dddddd;
-    height: auto;
-    clear: both;
-    overflow: auto;
-}
-
-/* Styles the heading in each white content box */
-
 h1 {
     color: #4aaaa5;
     font-family: Georgia, Times, 'Times New Roman', serif;
     font-size: 28px;
-    padding: 30px 0px;
-    margin: 0 30px 30px 30px;
+    padding: 20px;
     border-bottom: #dddddd;
     border-bottom-width: 2px;
     border-bottom-style: solid;
 }
 
+.display-4 {
+    font-size: 2rem;
+    border: none;
+    background-color: #4aaaa5;
+    color: #ffffff;
+}
+
+.navbar {
+    margin-bottom: 30px;
+}
+
+#contentContainer {
+    padding: 30px;
+}
 /* Styles the paragraphs inside the content box */
 
 p {
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif; 
     display: inline;
-    font-size: 18px;
+    font-size: 1.2rem;
     color: #777777;
-}
-
-/*---------------Header Styles-----------------------------------------------------------------------------------
----------------------------------------------------------------------------------------------------------------*/
-
-/* The entire header at the top of the page */
-
-.header {
-    background-color: #ffffff;
-    top: 0;
-    width: 100%;
-    height: 76px;
-    border-bottom: #cccccc;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-}
-
-
-/* The div that contains the content in the header */
-
-.nav {
-    width: 960px;
-    margin: 0 auto;
-    height: 78px;
-}
-
-/* Styles the name in the header */
-
-.nameheader {
-    background-color: #4aaaa5;
-    display: inline-block;
-    height: 77px;
-    width: auto;
-    margin: 0px;
-    padding: 20px;
-    font-size: 28px;
-    color: #ffffff;
-}
-
-/* The group of links in the header */
-
-ul {
-    float: right;
-    height: 79px;
-    margin: 0;
-    padding:30px 0;
-}
-
-/* Each individual link in the header */
-
-li {
-    display: inline;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 20px;
-    color: #777777;
-    padding: 0 20px;
-    border-right-style: solid;
-    border-right-color: #cccccc;
-    border-right-width: 1px; 
-    z-index: 10;
-    cursor: pointer;
-}
-
-/* Removes the border on the last link */
-
-li:last-child {
-    padding-right: 0;
-    border: none;
-}
-
-/* Prevents the links from being styled after clicking on them */
-
-a {
-    color: inherit;
-    text-decoration: inherit;
 }
 
 /*---------------About Me-----------------------------------------------------------------------------------------
@@ -153,51 +61,17 @@ a {
 
 .container img {
     width: 250px;
-    margin: 0 30px;
+    margin: 10px;
     border-style: solid;
     border-width: 2px;
     border-color: #dddddd;
     float: left;
+    padding: 0;
+    border-radius: 0;
 }
-
-/* Paragraph in About me section */
-
-.paragraph {
-    width: auto;
-    margin: 0 30px 30px 30px;    
-}
-
 
 /*---------------Contact Page-----------------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------------------------------------*/
-
-/* Styles each form in contact page */
-
-.container form {
-    padding: 30px;
-    font-size: 20px;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #777777;
-}
-
-/* Styles the placeholder text and input box in contact page */
-
-.container input {
-    margin: 5px 0;
-    width: 100%;
-    padding: 5px 5px;
-    font-size: 17px;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-}
-
-.container textarea {
-    margin: 5px 0;
-    width: 100%;
-    padding: 5px 5px;
-    font-size: 17px;
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    height: 200px;
-}
 
 /* Button at the bottom of the contact page */
 
@@ -227,7 +101,7 @@ a {
     position: relative;
     width: 250px;
     height: 250px;
-    margin: 15px;
+    margin: auto;
     
 }
 
