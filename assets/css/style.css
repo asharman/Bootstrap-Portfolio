@@ -14,8 +14,9 @@ body {
 .navbar {
     padding: 0;
     border-bottom: #dddddd;
-    border-width: 2px;
-    border-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    margin-bottom: 30px;
 }
 
 .bg-light {
@@ -44,6 +45,7 @@ h1 {
     border-bottom: #dddddd;
     border-bottom-width: 2px;
     border-bottom-style: solid;
+    margin-bottom: 15px;
 }
 
 .display-4 {
@@ -52,10 +54,6 @@ h1 {
     background-color: #4aaaa5;
     color: #ffffff;
     margin-bottom: 0;
-}
-
-.navbar {
-    margin-bottom: 30px;
 }
 
 #contentContainer {
@@ -118,11 +116,11 @@ p {
 /* The container that holds the individual projects and titles */
 
 .project {
-    float: left;
     position: relative;
     width: 250px;
     height: 250px;
     margin: auto;
+    margin-bottom: 15px;
     
 }
 
