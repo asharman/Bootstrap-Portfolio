@@ -11,6 +11,10 @@ body {
     padding: 0;
 }
 
+.bg-light {
+    background-color: #ffffff!important;
+}
+
 .container {
     padding: 0;
 }
@@ -36,6 +40,7 @@ h1 {
     border: none;
     background-color: #4aaaa5;
     color: #ffffff;
+    margin-bottom: 0;
 }
 
 .navbar {
@@ -75,11 +80,11 @@ p {
 
 /* Button at the bottom of the contact page */
 
-.container .submit {
-    width: auto;
+#submit {
+    /* width: auto; */
     background-color: #4aaaa5;
-    border: none;
-    padding: 10px 25px;
+    /* border: none; */
+    /* padding: 10px 25px; */
     color: #ffffff;
 }
 
