@@ -128,6 +128,8 @@ p {
 
 .project img {
     margin:0;
+    width: 250px;
+    height: 250px;
 }
 
 /* Positions and styles the titles for each project */
